@@ -20,7 +20,7 @@ No UI was developed. The unit tests verify all the functionality.
 * Type ```dotnet test``` to run the unit tests.
 
 
-### curl command
+### example APIs 
 
 * Create a board
 * url: https://localhost:5001/api/v1/battle/create
