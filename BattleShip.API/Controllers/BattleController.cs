@@ -18,9 +18,16 @@ namespace BattleShip.API.Controllers
         [HttpPost]
         public ActionResult<IBoardCreator> CreateBoard([FromBody] BoardParameters newBoard)
         {
-            var boardCreator = new BoardCreator();
-            var board = boardCreator.CreateBoard(newBoard.Rows, newBoard.Columns);
-            return Ok("new board create  row length  is: " + board.Rows + "columns is: " + board.Columns );
+            try
+            {
+                var boardCreator = new BoardCreator();
+                var board = boardCreator.CreateBoard(newBoard.Rows, newBoard.Columns);
+                return Ok("Create board succeed with row is: " + board.Rows + " columns is: " + board.Columns);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Failed");
+            }
         }
 
 
@@ -42,7 +49,7 @@ namespace BattleShip.API.Controllers
                 var shipPlacer = new ShipPlacer();
                 shipPlacer.AddShipToBoard(ship, board, body.placementRow, body.placementColumn);
 
-                return Ok("Place ship on the board");
+                return Ok("Place ship on the board succeed at placementRow: " + body.boardRows + " boardColumns: " + body.boardColumns);
 
             }
             catch (Exception ex)
