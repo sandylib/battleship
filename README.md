@@ -8,19 +8,28 @@
 hit or a miss
 * Return whether the player has lost the game yet (i.e. all battleships are sunk)
 
-No UI was developed. The unit tests verify all the functionality.
+## ```no developed```.  (I don't have free web serve, if you could provide info for free hosting server that I am be able to do it.)
+#### It could running in local see below for localurl and sample payload  
+#### Please go to the unit tests verify all the functionality.
+
+
 
 ## Get up and running from the command prompt
 * Ensure you've installed .NET Core 3
 * Open the command prompt
 * Ensure you have git installed
 * Run the following git clone: ```git clone git@github.com:sandylib/battleship.git```
+
+## Simple click the ```sln``` could run the project if you have visio studio installed
+
+## Run by using command
 * Type ```dotnet restore``` in the command prompt
 * Type ```dotnet build``` in the command prompt
-* Type ```dotnet test``` to run the unit tests.
+* Type ```dont net run``` inside BattleShip.API projects(not the Test project)
+* Type ```dotnet test``` (inside the Test project) to run the unit tests.
 
 
-### example APIs 
+### example APIs: please looking into the Test project find more test payload
 
 * Create a board
 * url: https://localhost:5001/api/v1/battle/create
@@ -62,3 +71,11 @@ https://localhost:5001/api/v1/battle/attack
 	"boardCellStatus": 2
 }
 ```
+
+## Trouble shoot
+
+### project build by using visio studio from mac if you have certificate valid issue, please do below
+
+- first go to ```Go -> Utilities -> KeyChain Access.``` delete the localcetificate
+
+- second run ```dotnet dev-certs https --trust``` will generate new dev trust certs.
