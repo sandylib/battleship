@@ -33,7 +33,8 @@ hit or a miss
 
 
 * Create a board
-* url: https://localhost:5001/api/v1/battle/create
+* local url: https://localhost:5001/api/v1/battle/create
+* public url: http://battleshipapi.australiaeast.azurecontainer.io/api/v1/battle.create
 
 ```sh
 {
@@ -44,7 +45,8 @@ hit or a miss
 ```
 
 * Add battleship to the board
-* url: https://localhost:5001/api/v1/battle/place
+* local url: https://localhost:5001/api/v1/battle/place
+* public url: http://battleshipapi.australiaeast.azurecontainer.io/api/v1/battle/place
 ```sh
 {
   "boardRows": 10,
@@ -58,7 +60,8 @@ hit or a miss
 
 
 * Take an "attack", expecting payload
-https://localhost:5001/api/v1/battle/attack
+* local url: https://localhost:5001/api/v1/battle/attack
+* public url: http://battleshipapi.australiaeast.azurecontainer.io/api/v1/battle/attack
 ```sh
 
 {
