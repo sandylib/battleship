@@ -8,10 +8,10 @@
 hit or a miss
 * Return whether the player has lost the game yet (i.e. all battleships are sunk)
 
-## ```no developed```.  (I don't have free web serve, if you could provide info for free hosting server that I am be able to do it.)
 #### It could running in local see below for localurl and sample payload  
 #### Please go to the unit tests verify all the functionality.
-
+### public endpoints:
+ - ```http://battleshipapi.australiaeast.azurecontainer.io```
 
 
 ## Get up and running from the command prompt
@@ -30,6 +30,7 @@ hit or a miss
 
 
 ### example APIs: please looking into the Test project find more test payload
+
 
 * Create a board
 * url: https://localhost:5001/api/v1/battle/create
