@@ -34,7 +34,7 @@ hit or a miss
 
 * Create a board
 * local url: https://localhost:5001/api/v1/battle/create
-* public url: http://battleshipapi.australiaeast.azurecontainer.io/api/v1/battle.create
+* public url: http://battleshipapi.australiaeast.azurecontainer.io/api/v1/battle/create
 
 ```sh
 {
